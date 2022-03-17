@@ -1,21 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online CV</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>CV en Ligne</title>
 </head>
 <body>
-    <!-- ==== FAVICON ==== -->
-    <link rel="stylesheet" href="#">
-    <!-- ==== CSS ==== -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="images/logo.png" alt="" class="nav__logo-img">
+        Dev' Web & Mobile
+      </a>
 
-    <!-- ==== BOXICONS ==== -->
-    <link rel="stylesheet" href="https://unpgk.com/boxicons@latest/css/boxicons.min.css">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Accueil</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">A Propos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Compétences</a>
+          </li>
+          <li class="nav__item">
+            <a href="#course" class="nav__link">Parcours</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+    
+        </ul>
 
-    <!-- ==== MAIN JS ==== -->
-    <script src="assets/js/main.js"></script>
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div>
+
+        <img src="images/nav-light.png" alt="" class="nav__img">
+      </div>
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-grid-alt'></i>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <img src="images/home.png" alt="" class="home__img">
+
+        <div class="home__data">
+          <h1 class="home__title">Hello, moi c'est
+             <br> Caroline Liard</h1>
+          <p class="home__description">
+            Créative, hyper curieuse, je souhaiterais devenir Développeuse Front.
+            <br>
+            Passionnée par le secteur artistique, je possède une très forte sensibilité au design.
+            <br>
+            <a href="https://github.com/Caro-L-dev"></i>Github </a>
+          </p>
+          <a href="#portfolio" class="button">Voir mon travail</a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section container">
+      <h2 class="section__title">
+        Le saviez vous ?
+      </h2>
+
+      <div class="about__container grid">
+        <div class="about__content">
+          <img src="images/about1.png" alt="" class="about__img">
+          <h3 class="about__title">Je suis</h3>
+          <p class="about__description">typing a mettre.</p>
+        </div>
+
+        <div class="about__content">
+          <img src="images/about2.png" alt="" class="about__img">
+          <h3 class="about__title">Mes sujets de prédilections sont</h3>
+          <p class="about__description">La lecture.</p>
+          <p class="about__description">Le dessin.</p>
+          <p class="about__description">Le sport.</p>
+        </div>
+
+        <div class="about__content">
+          <img src="images/about3.png" alt="" class="about__img">
+          <h3 class="about__title">Les sujets qui m'intéresse en Dev</h3>
+          <p class="about__description">Le Front.</p>
+          <p class="about__description">Le Web Design.</p>
+          <p class="about__description">UI | UX Design.</p>
+          <p class="about__description">Le SEO.</p>
+          <p class="about__description">L'ergonomie'.</p>
+          <p class="about__description">L'accessibilité Web.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section container" id="skills">
+      <div class="skills__container grid">
+        <div class="skills__data">
+          <h2 class="section__title skills__title">
+            Mes <br> Compétences
+          </h2>
+          <p class="skills__description">
+            Compétences cf maquette
+          </p>
+          <p class="skills__description">
+            Compétences cf logiciels
+          </p>
+        </div>
+
+        <img src="images/skills.png" alt="" class="skills__img">
+      </div>
+    </section>
+
+    <!--==================== PARCOURS ====================-->
+    <section class="course section container" id="course">
+      <h2 class="section__title">Share A course</h2>
+
+      <div class="course__container grid">
+        <article class="course__card">
+          <img src="images/course1.png" alt="" class="course__img">
+          <i class='bx bx-heart course__icon'></i>
+
+          <h3 class="course__price">$15</h3>
+          <span class="course__title">Gingerbread</span>
+        </article>
+
+        <article class="course__card">
+          <img src="images/course2.png" alt="" class="course__img">
+          <i class='bx bx-heart course__icon'></i>
+
+          <h3 class="course__price">$22</h3>
+          <span class="course__title">Santa Claus Hat</span>
+        </article>
+
+        <article class="course__card">
+          <img src="images/course3.png" alt="" class="course__img">
+          <i class='bx bx-heart course__icon'></i>
+
+          <h3 class="course__price">$48</h3>
+          <span class="course__title">Christmas Tree</span>
+        </article>
+
+        <article class="course__card">
+          <img src="images/course4.png" alt="" class="course__img">
+          <i class='bx bx-heart course__icon'></i>
+
+          <h3 class="course__price">$35</h3>
+          <span class="course__title">Snowman</span>
+        </article>
+
+        <article class="course__card">
+          <img src="images/course5.png" alt="" class="course__img">
+          <i class='bx bx-heart course__icon'></i>
+
+          <h3 class="course__price">$12</h3>
+          <span class="course__title">Candy Stick</span>
+        </article>
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section container" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+
+      <div class="portfolio__container">
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <article class="portfolio__card swiper-slide">
+              <div class="portfolio__overlay"></div>
+
+              <img src="images/portfolio1.png" alt="" class="portfolio__img">
+              <h3 class="portfolio__price">$95</h3>
+              <span class="portfolio__title">Reindeer</span>
+
+              <button class="button portfolio__button">
+                <i class='bx bx-heart portfolio__icon'></i>
+              </button>
+            </article>
+
+            <article class="portfolio__card swiper-slide">
+              <div class="portfolio__overlay"></div>
+
+              <img src="images/portfolio2.png" alt="" class="portfolio__img">
+              <h3 class="portfolio__price">$20</h3>
+              <span class="portfolio__title">Snow Globe</span>
+
+              <button class="button portfolio__button">
+                <i class='bx bx-heart portfolio__icon'></i>
+              </button>
+            </article>
+
+            <article class="portfolio__card swiper-slide">
+              <div class="portfolio__overlay"></div>
+
+              <img src="images/portfolio3.png" alt="" class="portfolio__img">
+              <h3 class="portfolio__price">$75</h3>
+              <span class="portfolio__title">Sledge</span>
+
+              <button class="button portfolio__button">
+                <i class='bx bx-heart portfolio__icon'></i>
+              </button>
+            </article>
+
+            <article class="portfolio__card swiper-slide">
+              <div class="portfolio__overlay"></div>
+
+              <img src="images/portfolio4.png" alt="" class="portfolio__img">
+              <h3 class="portfolio__price">$15</h3>
+              <span class="portfolio__title">Christmas Wreath</span>
+
+              <button class="button portfolio__button">
+                <i class='bx bx-heart portfolio__icon'></i>
+              </button>
+            </article>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section container">
+      <div class="contact__container grid">
+        <form action="" class="contact__form">
+          <h2 class="contact__title">Me <br> Contacter</h2>
+          <input type="email" placeholder="Write your contact" class="contact__input">
+          <button class="button contact__button">Send contact</button>
+        </form>
+
+        <img src="images/contact.png" alt="" class="contact__img">
+      </div>
+    </section>
+  </main>
+
+  
+
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+  </a>
+
+  <!--=============== SCROLL REVEAL ===============-->
+  <script src="js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="app.js"></script>
 </body>
 </html>
