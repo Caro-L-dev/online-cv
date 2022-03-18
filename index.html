@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--=============== FAVICON ===============-->
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  
+
   <!--=============== BOXICONS ===============-->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  
+
   <!--=============== SWIPER CSS ===============-->
   <link rel="stylesheet" href="">
 
@@ -18,6 +19,7 @@
 
   <title>CV en Ligne</title>
 </head>
+
 <body>
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
@@ -39,7 +41,7 @@
             <a href="#skills" class="nav__link">Compétences</a>
           </li>
           <li class="nav__item">
-            <a href="#course" class="nav__link">Parcours</a>
+            <a href="#experience" class="nav__link">Parcours</a>
           </li>
           <li class="nav__item">
             <a href="#portfolio" class="nav__link">Portfolio</a>
@@ -47,7 +49,7 @@
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
-    
+
         </ul>
 
         <div class="nav__close" id="nav-close">
@@ -74,7 +76,7 @@
     <!--==================== HOME ====================-->
     <section class="home" id="#">
       <div class="home__container container grid">
-        
+
 
         <div class="home__data">
           <h1 class="home__uptitle">
@@ -94,48 +96,67 @@
         </div>
         <img src="assets/images/avat.jpg" alt="my avatar" class="home__img">
       </div>
-      
+
     </section>
 
     <!--==================== ABOUT ====================-->
     <section class="about section container" id="about">
       <h2 class="section__title">
-        Le saviez vous ?
+        Le saviez <span class="title__span">vous ?</span>
       </h2>
 
-      <div class="about__container grid">
-        <div class="about__content">
-          <img src="images/about1.png" alt="" class="about__img">
-          <h3 class="about__title">Je suis</h3>
-          <p class="about__description">typing a mettre.
-            capable de travailler seule;
-            capable de travailler en équipe;
-            organisée;
-            flexible;
-            curieuse;
-          </p>
-        </div>
+      <div class="about__heading">
+        <h3 class="about__title">Je
+          <span class="typing"></span>
+        </h3>
 
-        <div class="about__content">
-          <img src="images/about2.png" alt="" class="about__img">
-          <h3 class="about__title">Mes sujets de prédilections sont</h3>
-          <p class="about__description">La lecture.</p>
-          <p class="about__description">Le dessin.</p>
-          <p class="about__description">Le sport.</p>
-        </div>
+        <p>
+          suis autonome
+          <br>
+          sais travailler en équipe
+          <br>
+          suis organisée
+          <br>
+          suis flexible
+          <br>
+          suis curieuse.
+        </p>
+      </div>
 
-        <div class="about__content">
-          <img src="images/about3.png" alt="" class="about__img">
-          <h3 class="about__title">Les sujets qui m'intéresse en Dev</h3>
-          <p class="about__description">Le Front.</p>
-          <p class="about__description">Le Web Design.</p>
-          <p class="about__description">UI | UX Design.</p>
-          <p class="about__description">Le SEO.</p>
-          <p class="about__description">L'ergonomie'.</p>
-          <p class="about__description">L'accessibilité Web.</p>
+      <div class="about__infos">
+        <div>
+          <div>
+            <div>
+              <h3 class="about__infos__title">
+                Loisirs que <i class='bx bxs-heart'></i>
+              </h3>
+              <p>La lecture.</p>
+              <p>Le dessin.</p>
+              <p>Le sport.</p>
+            </div>
+          </div>
+    
+          <div>
+            <h3 class="about__infos__title">
+              Ce qui m'intéresse en
+              <i class='bx bxl-dev-to'></i>
+            </h3>
+            <p>Le Front.</p>
+            <p>Le Web Design.</p>
+            <p>UI | UX Design.</p>
+            <p>Le SEO.</p>
+            <p>L'ergonomie'.</p>
+            <p>L'accessibilité Web.</p>
+          </div>
+    
         </div>
       </div>
+     
+
     </section>
+
+
+ 
 
     <!--==================== SKILLS ====================-->
     <section class="skills section container" id="skills">
@@ -193,76 +214,132 @@
                 <li>Dynamiser les pages avec Javascript</li>
                 <li>Conception multi plateforme - Responsive Design</li>
               </ul>
+            </div>
+
           </div>
 
+          <img src="images/skills.png" alt="" class="skills__img">
         </div>
-
-        <img src="images/skills.png" alt="" class="skills__img">
-      </div>
     </section>
 
     <!--==================== PARCOURS ====================-->
-    <section class="course section container" id="course">
+    <section class="experience section container" id="experience">
       <h2 class="section__title">Parcours</h2>
 
-      <!-- <div class="course__container grid">
-        <article class="course__card">
-          <img src="images/course1.png" alt="" class="course__img">
-          <i class='bx bx-heart course__icon'></i>
+      <div class="experience__container">
+        <h3>Formations & Diplomes</h3>
+        <div class="experience__box__container grid">
 
-          <h3 class="course__price">prout</h3>
-          <span class="course__title">pif</span>
-        </article> -->
+          <div class="experience__box">
+            <div class="experience__content">
+              <span>2022</span>
+              <h3>Formation Front End</h3>
+              <p>Simplon</p>
+            </div>
+          </div>
 
+          <div class="experience__box">
+            <div class="experience__content">
+              <span>2021 - 2022</span>
+              <h3>Prépa Numérique</h3>
+              <p>Association Z</p>
+            </div>
+          </div>
+
+          <div class="experience__box">
+            <div class="experience__content">
+              <span>2020</span>
+              <h3>« Maîtrise de la qualité en projet Web »</h3>
+              <p>Certification Opquast - Niveau confirmé.</p>
+            </div>
+          </div>
+
+          <div class="experience__box">
+            <div class="experience__content">
+              <span>2020</span>
+              <h3>Dev Web et Web Mobile</h3>
+              <p>Ecole O’clock</p>
+            </div>
+          </div>
+
+          <div class="experience__box">
+            <div class="experience__content">
+              <span>2019</span>
+              <h3>Mastère en cinéma d’animation</h3>
+              <p>ECV Lille</p>
+            </div>
+          </div>
+
+          <div class="experience__box">
+            <div class="experience__content">
+              <span>2014</span>
+              <h3>Baccalauréat STD2A</h3>
+              <p>Loos</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+
+
     </section>
 
     <!--==================== PORTFOLIO ====================-->
-    <section class="portfolio section container" id="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="section__title">Portfolio</h2>
 
-      <!-- <div class="portfolio__container">
-        <div class="swiper portfolio-swiper">
-          <div class="swiper-wrapper">
-            <article class="portfolio__card swiper-slide">
-              <div class="portfolio__overlay"></div>
+      <div class="box-container">
 
-              <img src="images/portfolio1.png" alt="" class="portfolio__img">
-              <h3 class="portfolio__price">yo</h3>
-              <span class="portfolio__title">Reindeer</span>
-
-              <button class="button portfolio__button">
-                <i class='bx bx-heart portfolio__icon'></i>
-              </button>
-            </article>
-
-            <article class="portfolio__card swiper-slide">
-              <div class="portfolio__overlay"></div>
-
-              <img src="images/portfolio2.png" alt="" class="portfolio__img">
-              <h3 class="portfolio__price">yo</h3>
-              <span class="portfolio__title">Snow Globe</span>
-
-              <button class="button portfolio__button">
-                <i class='bx bx-heart portfolio__icon'></i>
-              </button>
-            </article>
+        <div class="box">
+          <img src="assets/images/avat.jpg" alt="projet">
+          <h4>Projet 1</h4>
+          <div class="icons">
+            <a href="#" class='bx bx-link'></a>
+            <a href="#" class='bx bx-link'></a>
           </div>
-
-          <div class="swiper-pagination"></div>
         </div>
-      </div> -->
+
+        <div class="box">
+          <img src="assets/images/avat.jpg" alt="projet">
+          <h4>Projet 2</h4>
+          <div class="icons">
+            <a href="#" class='bx bx-link'></a>
+            <a href="#" class='bx bx-link'></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/images/avat.jpg" alt="projet">
+          <h4>Projet 3</h4>
+          <div class="icons">
+            <a href="#" class='bx bx-link'></a>
+            <a href="#" class='bx bx-link'></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/images/avat.jpg" alt="projet">
+          <h4>Projet 4</h4>
+          <div class="icons">
+            <a href="#" class='bx bx-link'></a>
+            <a href="#" class='bx bx-link'></a>
+          </div>
+        </div>
+
+      </div>
+
+
     </section>
 
     <!--==================== CONTACT ====================-->
-    <section class="contact section container" id="#contact">
+    <section class="contact section container" id="contact">
       <div class="contact__container grid">
         <form action="" class="contact__form">
           <h2 class="contact__title">Me <br> Contacter</h2>
           <input type="email" placeholder="A vous" class="contact__input">
           <button class="button contact__button">Envoyez votre message</button>
         </form>
-        
+
         <div class="contact__choice  contact__img">
           <div class="contact__choice__item">
             <p>icon a mettre</p>
@@ -270,25 +347,21 @@
             <p>06 20 16 75 45</p>
           </div>
           <div class="contact__choice__item">
-            <h3>M'envoyer un  mot</h3>
+            <h3>M'envoyer un mot</h3>
             <p>liardcar@gmail.com</p>
           </div>
-         <div class="contact__choice__item">
-          <h3>M'espionner sur </h3>
-          <p><a href="#"></a>Linkedin</p>
-         </div>
+          <div class="contact__choice__item">
+            <h3>M'espionner sur </h3>
+            <p><a href="#"></a>Linkedin</p>
+          </div>
         </div>
       </div>
-
     </section>
   </main>
 
-  
 
-  <!--=============== SCROLL UP ===============-->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-  </a>
+
+
 
   <!--=============== SCROLL REVEAL ===============-->
   <script src="js/scrollreveal.min.js"></script>
@@ -296,7 +369,8 @@
   <!--=============== SWIPER JS ===============-->
   <script src="js/swiper-bundle.min.js"></script>
 
-  <!--=============== MAIN JS ===============-->
+  <!--=============== JS FILES ===============-->
   <script src="app.js"></script>
 </body>
+
 </html>
