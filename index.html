@@ -30,7 +30,7 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">Accueil</a>
+            <a href="#" class="nav__link active-link">Accueil</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">A Propos</a>
@@ -72,27 +72,33 @@
   <!--==================== MAIN ====================-->
   <main class="main">
     <!--==================== HOME ====================-->
-    <section class="home" id="home">
+    <section class="home" id="#">
       <div class="home__container container grid">
-        <img src="images/home.png" alt="" class="home__img">
+        
 
         <div class="home__data">
-          <h1 class="home__title">Hello, moi c'est
-             <br> Caroline Liard</h1>
+          <h1 class="home__uptitle">
+            Hello ! Moi c'est
+          </h1>
+          <h1 class="home__name">
+            Caroline Liard</h1>
           <p class="home__description">
-            Créative, hyper curieuse, je souhaiterais devenir Développeuse Front.
+            Créative, hyper curieuse, je souhaiterais devenir <span class="home__span">Développeuse Front.</span>
             <br>
             Passionnée par le secteur artistique, je possède une très forte sensibilité au design.
             <br>
-            <a href="https://github.com/Caro-L-dev"></i>Github </a>
+            <br>
+            <a class="home__link" href="https://github.com/Caro-L-dev"></i>https://github.com/Caro-L-dev</a>
           </p>
           <a href="#portfolio" class="button">Voir mon travail</a>
         </div>
+        <img src="assets/images/avat.jpg" alt="my avatar" class="home__img">
       </div>
+      
     </section>
 
     <!--==================== ABOUT ====================-->
-    <section class="about section container">
+    <section class="about section container" id="about">
       <h2 class="section__title">
         Le saviez vous ?
       </h2>
@@ -101,7 +107,13 @@
         <div class="about__content">
           <img src="images/about1.png" alt="" class="about__img">
           <h3 class="about__title">Je suis</h3>
-          <p class="about__description">typing a mettre.</p>
+          <p class="about__description">typing a mettre.
+            capable de travailler seule;
+            capable de travailler en équipe;
+            organisée;
+            flexible;
+            curieuse;
+          </p>
         </div>
 
         <div class="about__content">
@@ -132,12 +144,57 @@
           <h2 class="section__title skills__title">
             Mes <br> Compétences
           </h2>
-          <p class="skills__description">
-            Compétences cf maquette
-          </p>
+
+          <h3 class="skills__subtitle">Section Dev</h3>
+          <div class="skills__techno__dev">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>JAVASCRIPT</li>
+              <li>REACT</li>
+              <li>VUEJS</li>
+            </ul>
+          </div>
+
+          <h3 class="skills__subtitle">Section Art</h3>
+          <div class="skills__techno__dev">
+            <ul>
+              <li>FIGMA</li>
+              <li>MIRO</li>
+              <li>PHOTOSHOP</li>
+              <li>ILLUSTRATOR</li>
+              <li>AFTER EFFECTS</li>
+              <li>KRITA</li>
+            </ul>
+          </div>
           <p class="skills__description">
             Compétences cf logiciels
           </p>
+
+          <h3 class="skills__subtitle">Outils de travail</h3>
+          <div class="skills__techno__tools">
+            <ul>
+              <li>GITHUB</li>
+              <li>LINUX</li>
+              <li>TRELLO</li>
+              <li>NOTION</li>
+              <li>DISCORD</li>
+              <li>SLACK</li>
+            </ul>
+
+            <h3 class="skills__subtitle">Capacités transversales</h3>
+            <div class="skills__transversal">
+              <ul>
+                <li>Concevoir un projet de A à Z</li>
+                <li>Méthodologie Agile</li>
+                <li>Conception Graphique et Design</li>
+                <li>Intégration Html Css</li>
+                <li>Dynamiser les pages avec Javascript</li>
+                <li>Conception multi plateforme - Responsive Design</li>
+              </ul>
+          </div>
+
         </div>
 
         <img src="images/skills.png" alt="" class="skills__img">
@@ -146,48 +203,17 @@
 
     <!--==================== PARCOURS ====================-->
     <section class="course section container" id="course">
-      <h2 class="section__title">Share A course</h2>
+      <h2 class="section__title">Parcours</h2>
 
-      <div class="course__container grid">
+      <!-- <div class="course__container grid">
         <article class="course__card">
           <img src="images/course1.png" alt="" class="course__img">
           <i class='bx bx-heart course__icon'></i>
 
-          <h3 class="course__price">$15</h3>
-          <span class="course__title">Gingerbread</span>
-        </article>
+          <h3 class="course__price">prout</h3>
+          <span class="course__title">pif</span>
+        </article> -->
 
-        <article class="course__card">
-          <img src="images/course2.png" alt="" class="course__img">
-          <i class='bx bx-heart course__icon'></i>
-
-          <h3 class="course__price">$22</h3>
-          <span class="course__title">Santa Claus Hat</span>
-        </article>
-
-        <article class="course__card">
-          <img src="images/course3.png" alt="" class="course__img">
-          <i class='bx bx-heart course__icon'></i>
-
-          <h3 class="course__price">$48</h3>
-          <span class="course__title">Christmas Tree</span>
-        </article>
-
-        <article class="course__card">
-          <img src="images/course4.png" alt="" class="course__img">
-          <i class='bx bx-heart course__icon'></i>
-
-          <h3 class="course__price">$35</h3>
-          <span class="course__title">Snowman</span>
-        </article>
-
-        <article class="course__card">
-          <img src="images/course5.png" alt="" class="course__img">
-          <i class='bx bx-heart course__icon'></i>
-
-          <h3 class="course__price">$12</h3>
-          <span class="course__title">Candy Stick</span>
-        </article>
       </div>
     </section>
 
@@ -195,14 +221,14 @@
     <section class="portfolio section container" id="portfolio">
       <h2 class="section__title">Portfolio</h2>
 
-      <div class="portfolio__container">
+      <!-- <div class="portfolio__container">
         <div class="swiper portfolio-swiper">
           <div class="swiper-wrapper">
             <article class="portfolio__card swiper-slide">
               <div class="portfolio__overlay"></div>
 
               <img src="images/portfolio1.png" alt="" class="portfolio__img">
-              <h3 class="portfolio__price">$95</h3>
+              <h3 class="portfolio__price">yo</h3>
               <span class="portfolio__title">Reindeer</span>
 
               <button class="button portfolio__button">
@@ -214,32 +240,8 @@
               <div class="portfolio__overlay"></div>
 
               <img src="images/portfolio2.png" alt="" class="portfolio__img">
-              <h3 class="portfolio__price">$20</h3>
+              <h3 class="portfolio__price">yo</h3>
               <span class="portfolio__title">Snow Globe</span>
-
-              <button class="button portfolio__button">
-                <i class='bx bx-heart portfolio__icon'></i>
-              </button>
-            </article>
-
-            <article class="portfolio__card swiper-slide">
-              <div class="portfolio__overlay"></div>
-
-              <img src="images/portfolio3.png" alt="" class="portfolio__img">
-              <h3 class="portfolio__price">$75</h3>
-              <span class="portfolio__title">Sledge</span>
-
-              <button class="button portfolio__button">
-                <i class='bx bx-heart portfolio__icon'></i>
-              </button>
-            </article>
-
-            <article class="portfolio__card swiper-slide">
-              <div class="portfolio__overlay"></div>
-
-              <img src="images/portfolio4.png" alt="" class="portfolio__img">
-              <h3 class="portfolio__price">$15</h3>
-              <span class="portfolio__title">Christmas Wreath</span>
 
               <button class="button portfolio__button">
                 <i class='bx bx-heart portfolio__icon'></i>
@@ -249,20 +251,35 @@
 
           <div class="swiper-pagination"></div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!--==================== CONTACT ====================-->
-    <section class="contact section container">
+    <section class="contact section container" id="#contact">
       <div class="contact__container grid">
         <form action="" class="contact__form">
           <h2 class="contact__title">Me <br> Contacter</h2>
-          <input type="email" placeholder="Write your contact" class="contact__input">
-          <button class="button contact__button">Send contact</button>
+          <input type="email" placeholder="A vous" class="contact__input">
+          <button class="button contact__button">Envoyez votre message</button>
         </form>
-
-        <img src="images/contact.png" alt="" class="contact__img">
+        
+        <div class="contact__choice  contact__img">
+          <div class="contact__choice__item">
+            <p>icon a mettre</p>
+            <h3>M'appeler</h3>
+            <p>06 20 16 75 45</p>
+          </div>
+          <div class="contact__choice__item">
+            <h3>M'envoyer un  mot</h3>
+            <p>liardcar@gmail.com</p>
+          </div>
+         <div class="contact__choice__item">
+          <h3>M'espionner sur </h3>
+          <p><a href="#"></a>Linkedin</p>
+         </div>
+        </div>
       </div>
+
     </section>
   </main>
 
