@@ -171,7 +171,8 @@
   }
   
   .section__title {
-    font-size: var(--h2-font-size);
+    font-size: var(--h1-font-size);
+    margin-top: var(--mb-2);
     margin-bottom: var(--mb-2-5);
     text-align: center;
     font-family: 'Lobster', cursive;
@@ -329,6 +330,7 @@
   .button {
     display: inline-block;
     background-color: var(--first-color);
+    border: none;
     color: #FFF;
     padding: 1.15rem 2.75rem;
     font-weight: var(--font-medium);
@@ -384,27 +386,7 @@
     font-size: var(--small-font-size);
   }
   
-  /*=============== SKILLS ===============*/
-  .skills__container {
-    row-gap: 1rem;
-  }
-  
-  .skills__data {
-    text-align: center;
-  }
-  
-  .skills__title {
-    margin-bottom: var(--mb-1-5);
-  }
-  
-  .skills__description {
-    margin-bottom: var(--mb-2-5);
-  }
-  
-  .skills__img {
-    width: 280px;
-    justify-self: center;
-  }
+
   
   /*=============== EXPERIENCES ===============*/
   .experience__container,
@@ -423,18 +405,7 @@
     border-left: .2rem solid var(--first-color);
   }
   
-  /* .experience__container,
-  .experience__box__container,
-  .experience__box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    background: var(--first-color);
-  } */
+
   
   .experience__icon {
     font-size: 1.25rem;
@@ -530,63 +501,10 @@
       color: var(--body-color);
     }
 
-  /*Class Swiper*/
-  .swiper-pagination-bullet {
-    background-color: var(--text-color);
-  }
-  
-  .swiper-pagination-bullet-active {
-    background-color: var(--first-color);
-  }
-  
-  /*=============== CONTACT ===============*/
-  .contact__container {
-    row-gap: 3rem;
-    background-color: var(--first-color);
-    padding: 2.5rem 1.5rem 2.5rem;
-    border-radius: 1.25rem;
-    
-  }
-  
-  .contact__form {
-    text-align: center;
-  }
-  
-  .contact__title {
-    color: #fff;
-    margin-bottom: var(--mb-1-5);
-  }
-  
-  .contact__input {
-    width: 100%;
-    background: #fff;
-    color: var(--text-color);
-    padding: 1rem 1.5rem;
-    border-radius: 3rem;
-    border: none;
-    outline: none;
-    margin-bottom: var(--mb-1);
-  }
-  
-  .contact__button {
-    background-color: var(--title-color);
-    width: 100%;
-  }
-  
-  .contact__button:hover {
-    background-color: var(--title-color);
-  }
+
+
   
 
-  .contact__choice{
-    display: flex;
-    justify-content: space-between; 
-  }
-  
-  .contact__choice__item{
-    margin: var(--mb-0-25);
-    text-align: center;
-  }
   
   
   /*=============== SCROLL BAR ===============*/
@@ -611,10 +529,6 @@
     .about__container {
       gap: 1rem;
     }
-    .gift__container {
-      grid-template-columns: 150px;
-      justify-content: center;
-    }
   }
   
   /* For medium devices */
@@ -626,21 +540,6 @@
       grid-template-columns: repeat(2, 142px);
       justify-content: center;
       gap: 2.5rem 3.5rem;
-    }
-    .skills__description {
-      padding: 0 4rem;
-    }
-    .gift__container {
-      grid-template-columns: repeat(2, 180px);
-      justify-content: center;
-      gap: 2rem;
-    }
-    .contact__input,
-    .contact__button {
-      width: 60%;
-    }
-    .footer__container {
-      grid-template-columns: repeat(2, 1fr);
     }
   }
   
@@ -687,19 +586,7 @@
       grid-template-columns: repeat(3, 142px);
       column-gap: 5rem;
     }
-    .skills__data, .skills__title {
-      text-align: initial;
-    }
-    .skills__description {
-      padding: 0;
-    }
-    .gift__container {
-      grid-template-columns: repeat(3, 200px);
-      gap: 2.5rem;
-    }
-    .footer__container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+
   }
   
   /* For large devices */
@@ -723,56 +610,6 @@
     }
     .about__img {
       width: 120px;
-    }
-    .skills__img {
-      width: 450px;
-    }
-    .skills__description {
-      padding-right: 7rem;
-    }
-    .gift__container {
-      padding-top: 2rem;
-    }
-    .gift__card {
-      padding: 2rem 1.5rem 1.5rem;
-    }
-    .gift__img {
-      width: 120px;
-      margin-bottom: var(--mb-1);
-    }
-    .gift__title {
-      font-size: var(--small-font-size);
-    }
-    .portfolio__container {
-      padding-top: 2rem;
-    }
-    .portfolio__card {
-      margin-bottom: 5rem;
-    }
-    .portfolio__price {
-      font-size: var(--h3-font-size);
-    }
-    .contact__container {
-      padding: 3.5rem 0;
-      grid-template-columns: repeat(2, max-content);
-      column-gap: 4rem;
-      justify-content: center;
-    }
-    .contact__form {
-      text-align: initial;
-    }
-    .contact__title {
-      font-size: var(--h1-font-size);
-    }
-    .contact__input {
-      display: block;
-      width: 280px;
-    }
-    .contact__button {
-      width: initial;
-    }
-    .contact__img {
-      width: 320px;
     }
 
     .scrollup {
