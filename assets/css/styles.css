@@ -170,6 +170,10 @@
   .grid {
     display: grid;
   }
+
+  .flex{
+    display: flex;
+  }
   
   .main {
     overflow: hidden;
@@ -373,11 +377,6 @@
   }
 
   .about__heading{
-    text-align: center;
-  }
-
-  .about__infos{
-    
     text-align: center;
   }
 
