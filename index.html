@@ -6,29 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
 
   <!--=============== BOXICONS ===============-->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-  <!--=============== SWIPER CSS ===============-->
-  <link rel="stylesheet" href="">
-
-  <!--=============== CSS ===============-->
+  <!--=============== FILES CSS ===============-->
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/skill.css">
-  <link rel="stylesheet" href="assets/css/contact.css">
-  <link rel="stylesheet" href="assets/css/test.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
 
-  <title>CV en Ligne</title>
+  <title>Caroline Liard CV</title>
 </head>
 
 <body>
-  <!--==================== HEADER ====================-->
+  <!--==================== HEADER START ====================-->
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav__logo">
-        <img src="images/logo.png" alt="" class="nav__logo-img">
         Dev' Web & Mobile
       </a>
 
@@ -52,20 +46,26 @@
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
-
         </ul>
 
         <div class="nav__close" id="nav-close">
           <i class='bx bx-x'></i>
         </div>
-
-        <img src="images/nav-light.png" alt="" class="nav__img">
       </div>
       <div class="nav__btns">
-        <!-- Theme change button -->
-        <i class='bx bx-moon change-theme' id="theme-button"></i>
+        <!-- DARK MODE BUTTON  -->
+        <!-- <i class='bx bx-moon change-theme'></i> -->
 
-        <!-- Toggle button -->
+        <div class="toggle">
+          <input type="checkbox" class="checkbox" id="dark-mode" />
+          <label for="dark-mode" class="label">
+            <i class='bx bxs-moon'></i>
+            <i class='bx bxs-sun'></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+
+        <!-- TOGGLE MOBILE BUTTON -->
         <div class="nav__toggle" id="nav-toggle">
           <i class='bx bx-grid-alt'></i>
         </div>
@@ -73,14 +73,13 @@
 
     </nav>
   </header>
+  <!--==================== HEADER END ====================-->
 
   <!--==================== MAIN ====================-->
   <main class="main">
-    <!--==================== HOME ====================-->
+    <!--==================== HOME START ====================-->
     <section class="home" id="#">
       <div class="home__container container grid">
-
-
         <div class="home__data">
           <h1 class="home__uptitle">
             Hello ! Moi c'est
@@ -99,10 +98,10 @@
         </div>
         <img src="assets/images/avat.jpg" alt="my avatar" class="home__img">
       </div>
-
     </section>
+    <!--==================== HOME END ====================-->
 
-    <!--==================== ABOUT ====================-->
+    <!--==================== ABOUT START ====================-->
     <section class="about section container" id="about">
       <h2 class="section__title">
         Le saviez <span class="title__span">vous ?</span>
@@ -138,7 +137,7 @@
               <p>Le sport.</p>
             </div>
           </div>
-    
+
           <div>
             <h3 class="about__infos__title">
               Ce qui m'intéresse en
@@ -151,131 +150,127 @@
             <p>L'ergonomie'.</p>
             <p>L'accessibilité Web.</p>
           </div>
-    
+
         </div>
       </div>
-     
-
     </section>
-
-
- 
+    <!--==================== ABOUT END ====================-->
 
     <!--==================== SKILL START ====================-->
 
-<section class="about" id="skills">
+    <section class="skill container" id="skills">
 
-  <h1 class="section__title"> Mes <span> compétences </span> </h1>
-  
-  <div class="row-1">
-  
-      <div class="image">
-          <img src="assets/images/avat.jpg" alt="temporary">
-          
-      </div>
-  
-      <div class="content">
-          <h3 class="section__title"> Double <span class="title__span">casquette</span></h3>
-          <p>Je m'occupe de la partie <span class="title__span">graphique</span>  et <span class="title__span">technique</span>  de votre projet.</p>
+      <h1 class="section__title"> Mes <span class="home__span"> compétences </span> </h1>
+
+      <div class="row-1">
+        <div class="content">
+          <h3 class="section__subtitle"> Double casquette. Je m'occupe de la partie <span
+              class="title__span">graphique</span> et <span class="title__span">technique</span> de votre projet.</h3>
           <div class="box-container">
-              <div class="box">
-                  <p> Concevoir un projet de A à Z <i class='bx bxs-check-square' style="color: green" ></i></p>
-                  <p> Utiliser la méthodologie Agile <i class='bx bxs-check-square' style="color: green" ></i></p>
-                  <p> Conception Graphique et Design <i class='bx bxs-check-square' style="color: green" ></i></p>
-                  <p> Intégration Html Css <i class='bx bxs-check-square' style="color: green" ></i></p>
-              </div>
-              <div class="box">
-                  <p> Dynamiser les pages avec Javascript <i class='bx bxs-check-square' style="color: green" ></i> </p>
-                  <p> Conception multi plateforme - Responsive Design <i class='bx bxs-check-square' style="color: green" ></i></p>
-                  <p> Parle et écrit Anglais couramment <i class='bx bxs-check-square' style="color: green" ></i></p>
-             
-              </div>
+            <div class="box">
+              <p><i class='bx bxs-check-square' style="color: green"></i> Concevoir un projet de A à Z </p>
+              <p><i class='bx bxs-check-square' style="color: green"></i> Utiliser la méthodologie Agile </p>
+              <p><i class='bx bxs-check-square' style="color: green"></i> Conception Graphique et Design </p>
+              <p><i class='bx bxs-check-square' style="color: green"></i> Intégration Html Css </p>
+            </div>
+            <div class="box">
+              <p><i class='bx bxs-check-square' style="color: green"></i> Dynamiser les pages avec Javascript </i> </p>
+              <p><i class='bx bxs-check-square' style="color: green"></i> Conception multi plateforme | Responsive
+                Design </p>
+              <p><i class='bx bxs-check-square' style="color: green"></i> Parle et écrit Anglais couramment </i></p>
+            </div>
           </div>
-          
-      </div>
-  
-  </div>
-  
-  
-  
-  <div class="row-2">
-  
-      <div class="skills">         
-      <div class="box-container">
-  
-        <div class="box">
-            <h3><i class='bx bxl-html5' ></i></h3>
-            <p>HTML</p>
         </div>
-        <div class="box">
-            <h3> <i class='bx bxl-css3' ></i></h3>
-            <p>CSS</p>
-        </div>
-        <div class="box">
-            <h3> <i class='bx bxl-sass' ></i> </h3>
-            <p>SASS</p>
-        </div>
-        <div class="box">
-            <h3> <i class='bx bxl-javascript' ></i> </h3>
-            <p>JAVASCRIPT</p>
-        </div>
-        <div class="box">
-          <h3> <i class='bx bxl-javascript' ></i> </h3>
-          <p>REACT</p>
       </div>
-      <div class="box">
-        <h3> <i class='bx bxl-javascript' ></i></h3>
-        <p>VUEJS</p>
-    </div>
-    </div>
-
-          
-      </div>
-
-      
-  
-      <div class="box-container">
-  
-          <div class="box">
-              <h3> <i class='bx bxl-figma' ></i> </h3>
-              <p>FIGMA</p>
-          </div>
-          <div class="box">
-              <h3> <i class='bx bx-palette' ></i> </h3>
-              <p>MIRO</p>
-          </div>
-          <div class="box">
-              <h3> <i class='bx bx-palette' ></i> </h3>
-              <p>PHOTOSHOP</p>
-          </div>
-          <div class="box">
-              <h3> <i class='bx bx-palette' ></i> </h3>
-              <p>ILLUSTRATOR</p>
-          </div>
-          <div class="box">
-            <h3> <i class='bx bx-palette' ></i> </h3>
-            <p>AFTER EFFECTS</p>
-        </div>
-        <div class="box">
-          <h3> <i class='bx bx-palette' ></i> </h3>
-          <p>KRITA</p>
-      </div>
-  
-      </div>
-  
-  </div>
-  
-  </section>
-   <!--==================== SKILL START ====================-->
 
 
 
-    <!--==================== PARCOURS ====================-->
+      <div class="row-2">
+
+        <div class="skill">
+          <div class="box-container">
+
+            <div class="box">
+              <span><i class='bx bxl-html5'></i></span>
+              <span>HTML</span>
+            </div>
+            <div class="box">
+              <span><i class='bx bxl-css3'></i></span>
+
+              <span>CSS</span>
+            </div>
+            <div class="box">
+              <span><i class='bx bxl-sass'></i> </span>
+
+              <span>SASS</span>
+            </div>
+            <div class="box">
+              <span><i class='bx bxl-javascript'></i></span>
+
+              <span>JAVASCRIPT</span>
+            </div>
+            <div class="box">
+              <span><i class='bx bxl-react'></i></span>
+
+              <span>REACT</span>
+            </div>
+            <div class="box">
+              <span><i class='bx bxl-vuejs'></i></span>
+
+              <span>VUEJS</span>
+            </div>
+            <div class="box">
+              <span><i class='bx bx-expand-horizontal'></i></span>
+
+              <span>DEV & ART</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="box-container">
+
+          <div class="box">
+            <span><i class='bx bxl-figma'></i></span>
+            <span>FIGMA</span>
+          </div>
+          <div class="box">
+            <span><i class='bx bx-palette'></i></span>
+            <span>MIRO</span>
+          </div>
+          <div class="box">
+            <span><i class='bx bx-palette'></i></span>
+            <span>PHOTOSHOP</span>
+          </div>
+          <div class="box">
+            <span><i class='bx bx-palette'></i></span>
+            <span>ILLUSTRATOR</span>
+          </div>
+          <div class="box">
+            <span><i class='bx bx-palette'></i></span>
+            <span>AFTER EFFECTS</span>
+          </div>
+          <div class="box">
+            <span><i class='bx bx-palette'></i></span>
+            <span>KRITA</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!--==================== SKILL END ====================-->
+
+
+
+    <!--==================== PARCOURS START ====================-->
     <section class="experience section container" id="experience">
-      <h2 class="section__title">Parcours</h2>
+      <h2 class="section__title">Mon <span class="home__span"> parcours</span></h2>
 
       <div class="experience__container">
-        <h3 class="section__title">Formations & Diplomes</h3>
+        <h3 class="section__subtitle">Diplômes & Formations</h3>
         <div class="experience__box__container grid">
 
           <div class="experience__box">
@@ -329,7 +324,7 @@
       </div>
 
       <div class="experience__container">
-        <h3 class="section__title">Expériences Professionnelles</h3>
+        <h3 class="section__subtitle">Expériences Professionnelles</h3>
         <div class="experience__box__container grid">
 
           <div class="experience__box">
@@ -348,18 +343,15 @@
             </div>
           </div>
 
-        
-          </div>
         </div>
       </div>
-
-
-
+      </div>
     </section>
+    <!--==================== PARCOURS END ====================-->
 
-    <!--==================== PORTFOLIO ====================-->
+    <!--==================== PORTFOLIO START ====================-->
     <section class="portfolio" id="portfolio">
-      <h2 class="section__title">Portfolio</h2>
+      <h2 class="section__title">Mes <span class="home__span">projets</span></h2>
 
       <div class="box-container">
 
@@ -398,48 +390,38 @@
             <a href="#" class='bx bx-world'></a>
           </div>
         </div>
-
       </div>
-
-
     </section>
+    <!--==================== PORTFOLIO END ====================-->
 
-
-
-      <!--==================== CONTACT START ====================-->
-
-<section class="contact container" id="contact">
-
-  <h1 class="section__title"> Me <span> contacter </span> </h1>
-
-  <div class="icons-container">
-
-      <div class="icons">
-        <i class='bx bx-envelope' ></i>
+    <!--==================== CONTACT START ====================-->
+    <section class="contact container" id="contact">
+      <h1 class="section__title"> Me <span class="home__span"> contacter </span> </h1>
+      <div class="icons-container">
+        <div class="icons">
+          <i class='bx bx-envelope'></i>
           <h3>M'envoyer un mot</h3>
-          <p>liardcar@gmail.com</p>
-      </div>
+          <span>liardcar@gmail.com</span>
+        </div>
 
-      <div class="icons">
-        <i class='bx bxs-phone' ></i>
+        <div class="icons">
+          <i class='bx bxs-phone'></i>
           <h3>M'appeler</h3>
-          <p>+33 6 20 16 75 45</p>
-      </div>
+          <span>+33 6 20 16 75 45</span>
+        </div>
 
-      <div class="icons">
-        <i class='bx bxl-linkedin-square' ></i>
+        <div class="icons">
+          <i class='bx bxl-linkedin-square'></i>
           <h3>Voir mon profil</h3>
-          <p>
+          <span>
             <a href="https://www.linkedin.com/in/liardcaroline/">Linkedin</a>
-          </p>
-          
+          </span>
+        </div>
       </div>
 
-  </div>
+      <div class="row">
 
-  <div class="row">
-
-      <form action="">
+        <form class="padding-bottom" action="">
 
           <input type="text" placeholder="Vote nom" class="box">
           <input type="email" placeholder="Votre email" class="box">
@@ -448,23 +430,12 @@
           <textarea name="" placeholder="C'est à vous !" id="" cols="30" rows="10"></textarea>
 
           <input type="submit" class="button" value="Envoyer votre message">
+        </form>
+      </div>
+    </section>
 
-      </form>
-  </div>
-
-
-</section>
-
-<!--==================== CONTACT END ====================-->
-   
-
+    <!--==================== CONTACT END ====================-->
   </main>
-
-
-
-
-
-
 
   <!--=============== JS FILES ===============-->
   <script src="app.js"></script>

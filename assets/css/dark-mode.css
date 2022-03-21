@@ -1,0 +1,102 @@
+.toggle{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+.checkbox {
+    display: none;
+  }
+
+  .label {
+    height: 2rem;
+    width: 4rem;
+    background: var(--first-color);
+    padding: 5px 8px;
+    border-radius: 5rem;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+  }
+  .label .ball {
+    background: var(--body-color);
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    transform: translateX(0px);
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35,1.78);
+  }
+  .checkbox:checked + .label .ball {
+    transform: translateX(29px);
+  }
+  .bxs-moon,
+  .bxs-sun {
+    color: var(--body-color);
+  }
+
+   /* DARK MODE */
+ .dark {
+    background:  hsl(355, 20%, 12%);
+  }
+  .dark main {
+    background: hsl(355, 16%, 16%);
+  }
+  .dark .label {
+    box-shadow: 2px 1px 1px var(--text-color-dark);
+    background: var(--first-color);
+  }
+  .dark .ball {
+    background: black;
+  }
+
+  .dark p {
+    color: hsl(355, 4%, 75%);
+  }
+
+  .dark h1 {
+    color: white;
+  }
+
+  .dark h2 {
+    color: white;
+  }
+
+  .dark h3 {
+    color: white;
+  }
+
+.dark div{
+    background: transparent;
+}
+
+.dark span{
+  color: var(--first-color);
+}
+
+.dark header{
+  background: hsl(355, 16%, 16%);
+}
+
+.dark li{
+  color: white;
+}
+
+.dark .active-link{
+  color: #F9A63B;
+}
+
+.dark .nav__link{
+  color: white;
+}
+
+.dark .nav__logo{
+  color: #F9A63B;
+}
+ 
