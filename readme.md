@@ -8,9 +8,6 @@
         <a href="https://validator.w3.org/">Validator W3C</a>
     </li>
     <li>
-        Le projet possède une version mobile et une version Desktop.
-    </li>
-    <li>
         La page est publiée sur GitHub Pages.
     </li>
     <li>
